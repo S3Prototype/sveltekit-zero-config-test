@@ -4,7 +4,9 @@ import adapter from '@sveltejs/adapter-vercel';
 const config = {
 	// Added adapter auto to package.json
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			split: true
+		})
 	}
 };
 
