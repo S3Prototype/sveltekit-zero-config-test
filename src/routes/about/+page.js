@@ -9,5 +9,5 @@ export const csr = dev;
 // export const prerender = true;
 
 export const config = {
-	runtime: 'nodejs18.x'
+	runtime: 'edge'
 };
