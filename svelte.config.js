@@ -2,7 +2,7 @@ import adapter from '@sveltejs/adapter-auto';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Test
+	// Added adapter auto to package.json
 	kit: {
 		adapter: adapter()
 	}
