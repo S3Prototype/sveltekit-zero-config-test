@@ -7,7 +7,7 @@ export const config = {
 	matcher: '/example'
 };
 
-export default function middleware(request) {
+export default function middleware(request): Response {
 	const url = new URL(request.url);
 
 	const { country } = geolocation(request);
@@ -19,4 +19,7 @@ export default function middleware(request) {
 		// Return a new redirect response
 		return Response.redirect(url);
 	}
+
+	url.pathname = '/';
+	return Response.redirect(url);
 }
