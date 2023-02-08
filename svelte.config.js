@@ -1,12 +1,13 @@
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-auto';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Added adapter auto to package.json
 	kit: {
-		adapter: adapter({
-			runtime: 'edge'
-		})
+		// adapter: adapter({
+		// 	runtime: 'edge'
+		// })
+		adapter: adapter()
 	}
 };
 
