@@ -5,7 +5,6 @@ const config = {
 	// Added adapter auto to package.json
 	kit: {
 		adapter: adapter({
-			split: true,
 			runtime: 'edge'
 		})
 	}
